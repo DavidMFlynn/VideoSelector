@@ -482,8 +482,10 @@ SendConnectString	movf	Param71,W	;Switch value
 	call	StoreSerOut
 	movlw	'!'
 	call	StoreSerOut
-	movlw	0x0D
-	call	StoreSerOut	
+;	movlw	0x0D                   ;CR
+;	call	StoreSerOut	
+;	movlw	0x0A                   ;LF
+;	call	StoreSerOut	
 ;
 	return
 ;
